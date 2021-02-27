@@ -20,8 +20,8 @@
     "Payload": "Payload:"
   },
   "FromTimeToTimeTextInputs": {
-    "Start": "start",
-    "End": "end",
+    "Start": "Start date",
+    "End": "End date",
     "Continue": "Continue"
   }
 }

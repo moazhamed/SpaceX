@@ -42,7 +42,9 @@ const FromTimeToTimeTextInputs = ({
         onChangeDate={setEndDate}
         width="32.5%"
         customTextInputProps={{
-          value: endDate ? `${moment(endDate).format('YYYY-MM-DD')}` : 'End',
+          value: endDate
+            ? `${moment(endDate).format('YYYY-MM-DD')}`
+            : translate('FromTimeToTimeTextInputs.End'),
           styles: {...styles.Textinput},
         }}
         IosConfrimButtonText={translate('FromTimeToTimeTextInputs.Continue')}
