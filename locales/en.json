@@ -1,0 +1,18 @@
+{
+  "Home": {
+    "NextLaunch": "Next launch data"
+  },
+  "PastLaunches": {
+    "EmptyList": "Loading past Launches"
+  },
+  "LaunchItem": {
+    "LaunchName": "Launch Name",
+    "LaunchDate": "Launch Date"
+  },
+  "LaunchDetails": {
+    "LaunchedAt": "Launched at:",
+    "launchPad": "launchpad:",
+    "Details": "Rocket details:",
+    "Payload": "Payload:"
+  }
+}
