@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import {TextInput, I18nManager, Text, StyleSheet} from 'react-native';
+import React from 'react';
+import {TextInput, Text, StyleSheet} from 'react-native';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -44,8 +44,6 @@ let getStyle = (height, width, styles) =>
       paddingLeft: wp('4%'),
       paddingRight: wp('1%'),
       color: 'white',
-      // writingDirection: 'rtl',
-      ...styles,
     },
     rejectedText: {
       textAlign: 'left',

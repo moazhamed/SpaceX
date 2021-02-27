@@ -1,0 +1,27 @@
+{
+  "Home": {
+    "NextLaunch": "بيانات الإطلاق التالية"
+  },
+  "PastLaunches": {
+    "EmptyList": "تحميل عمليات الإطلاق السابقة",
+    "NoItems": "لم يتم العثور على العناصر",
+    "FilterText": "تصفية عمليات الإطلاق السابقة بين تاريخين",
+    "SearchText": "بحث",
+    "ClearFilter": "مسح المرشحات"
+  },
+  "LaunchItem": {
+    "LaunchName": "اسم الإطلاق",
+    "LaunchDate": "موعد الإطلاق"
+  },
+  "LaunchDetails": {
+    "LaunchedAt": "تم الإطلاق في:",
+    "launchPad": "منصة الإطلاق:",
+    "Details": "تفاصيل الصاروخ:",
+    "Payload": "الحمولة:"
+  },
+  "FromTimeToTimeTextInputs": {
+    "Start": "بداية",
+    "End": "نهاية",
+    "Continue": "يكمل"
+  }
+}

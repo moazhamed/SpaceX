@@ -10,7 +10,7 @@ import moment from 'moment';
 import CountDown from 'react-native-countdown-component';
 import {translate} from '../../utils/i18n';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import Button from '../../components/atoms/Button';
 const NextLaunch = ({navigation}) => {
   let [ramainingTime, setRemainingTime] = useState();
   let [nameOfLaunch, setNameOfLaunch] = useState();
@@ -63,12 +63,18 @@ const NextLaunch = ({navigation}) => {
           />
         ) : null}
       </View>
-      <TouchableOpacity
+      {/* <Button
+        buttonText={launchLink}
         onPress={() => {
           Linking.openURL(launchLink);
-        }}>
-        <Text style={styles.link}>{launchLink}</Text>
-      </TouchableOpacity>
+        }}
+        height={'3%'}
+        width={'82.5%'}
+        backgroundColor={'transparent'}
+        marginTop={'0%'}
+        textFontSize={'1'}
+        textColor={'blue'}
+      /> */}
     </View>
   );
 };
@@ -94,13 +100,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   conutDownTimer: {
+    height: hp('20%'),
+    width: wp('100%'),
     marginTop: hp('5%'),
-  },
-  link: {
-    color: 'blue',
-    fontSize: 14,
-    fontWeight: 'bold',
-    textAlign: 'center',
   },
 });
 

@@ -3,7 +3,11 @@
     "NextLaunch": "Next launch data"
   },
   "PastLaunches": {
-    "EmptyList": "Loading past Launches"
+    "EmptyList": "Loading past Launches",
+    "NoItems": "No items found",
+    "FilterText": "Filter past launches between two dates",
+    "SearchText": "Search",
+    "ClearFilter": "Clear filters"
   },
   "LaunchItem": {
     "LaunchName": "Launch Name",
@@ -14,5 +18,10 @@
     "launchPad": "launchpad:",
     "Details": "Rocket details:",
     "Payload": "Payload:"
+  },
+  "FromTimeToTimeTextInputs": {
+    "Start": "start",
+    "End": "end",
+    "Continue": "Continue"
   }
 }

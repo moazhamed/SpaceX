@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet, Linking,TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Linking, TouchableOpacity} from 'react-native';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 import moment from 'moment';
 import {translate} from '../../utils/i18n';
+import Button from '../../components/atoms/Button';
 
 const LaunchDetails = ({navigation, route}) => {
   const {item} = route.params;
@@ -16,28 +17,38 @@ const LaunchDetails = ({navigation, route}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.name}>{item.name}</Text>
+      <Text style={styles.title}>{translate('LaunchDetails.LaunchedAt')}</Text>
       <Text style={styles.date}>
-        {translate('LaunchDetails.LaunchedAt')}
-        {'  '}
         {moment(item.date_utc).format('YYYY-MM-DD hh:mm a')}
       </Text>
-      <Text style={styles.launchPad}>
-        {translate('LaunchDetails.launchPad')} {item.launchpad}
-      </Text>
-      <Text style={styles.details}>
-        {translate('LaunchDetails.Details')} {item.details}
-      </Text>
-      <Text style={styles.payload}>
-        {translate('LaunchDetails.Payload')}
-        {'  '}
-        {item.payloads}
-      </Text>
-      <TouchableOpacity
-        onPress={() => {
-          Linking.openURL(item.links.webcast);
-        }}>
-        <Text style={styles.link}>{item.links.webcast}</Text>
-      </TouchableOpacity>
+
+      <Text style={styles.title}>{translate('LaunchDetails.launchPad')}</Text>
+
+      <Text style={styles.launchPad}>{item.launchpad}</Text>
+
+      {item.details ? (
+        <View>
+          <Text style={styles.title}>{translate('LaunchDetails.Details')}</Text>
+          <Text style={styles.details}>{item.details}</Text>
+        </View>
+      ) : null}
+      <Text style={styles.title}>{translate('LaunchDetails.Payload')}</Text>
+
+      <Text style={styles.payload}>{item.payloads}</Text>
+      <View style={styles.link}>
+        <Button
+          buttonText={item.links.webcast}
+          onPress={() => {
+            Linking.openURL(item.links.webcast);
+          }}
+          height={'3%'}
+          width={'94%'}
+          backgroundColor={'transparent'}
+          marginTop={'0%'}
+          textFontSize={'1'}
+          textColor={'blue'}
+        />
+      </View>
     </View>
   );
 };
@@ -47,26 +58,28 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#E5E5E5',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
     paddingHorizontal: wp('2%'),
+    height: hp('80%'),
+    width: wp('100')
   },
   name: {
     color: 'blue',
     fontSize: 34,
     fontWeight: 'bold',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   date: {
     color: 'black',
     fontSize: 14,
     fontWeight: 'bold',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   launchPad: {
     color: 'black',
     fontSize: 14,
     fontWeight: 'normal',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   details: {
     color: 'black',
@@ -78,11 +91,14 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 14,
     fontWeight: 'normal',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   link: {
+    paddingHorizontal: wp('2%'),
+  },
+  title: {
     color: 'blue',
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
   },

@@ -22,10 +22,10 @@ const FromTimeToTimeTextInputs = ({
         customTextInputProps={{
           value: startDate
             ? `${moment(startDate).format('YYYY-MM-DD')}`
-            : 'start',
+            : translate('FromTimeToTimeTextInputs.Start'),
           styles: {...styles.Textinput},
         }}
-        IosConfrimButtonText={'end'}
+        IosConfrimButtonText={translate('FromTimeToTimeTextInputs.End')}
         onChangeDate={setStartDate}
         pickerMode="datetime"
       />
@@ -45,7 +45,7 @@ const FromTimeToTimeTextInputs = ({
           value: endDate ? `${moment(endDate).format('YYYY-MM-DD')}` : 'End',
           styles: {...styles.Textinput},
         }}
-        IosConfrimButtonText={'Continue'}
+        IosConfrimButtonText={translate('FromTimeToTimeTextInputs.Continue')}
         pickerMode="datetime"
       />
     </View>
@@ -61,9 +61,8 @@ const styles = StyleSheet.create({
   Textinput: {
     backgroundColor: 'grey',
     color: 'white',
-    fontSize: 18,
+    fontSize: 24,
     textAlign: 'center',
-    lineHeight: 12,
     paddingTop: Platform.OS === 'android' ? hp('2.5%') : 0,
   },
   IconContainer: {

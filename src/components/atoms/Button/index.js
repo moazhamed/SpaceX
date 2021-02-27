@@ -69,9 +69,9 @@ let getStyle = (
       alignSelf: 'center',
     },
     text: {
+      textAlign: 'center',
       fontSize: 16,
       color: textColor,
-      fontFamily: 'DINAlternate-Bold',
     },
   });
 export default Button;

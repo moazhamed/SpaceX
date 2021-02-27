@@ -1,0 +1,572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#E5E5E5",
+      "flex": 1,
+      "paddingVertical": 13.5,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "blue",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    You can filter past launches between two dates
+  </Text>
+  <View
+    style={
+      Object {
+        "height": 200,
+        "marginLeft": 75,
+        "width": 150,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginTop": 57.5,
+        }
+      }
+    >
+      <View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            pointerEvents="none"
+          >
+            <TextInput
+              allowFontScaling={true}
+              onChangeText={[Function]}
+              placeholderTextColor="red"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "backgroundColor": "grey",
+                  "borderRadius": 3,
+                  "color": "white",
+                  "fontSize": 18,
+                  "height": 93.5,
+                  "lineHeight": 12,
+                  "opacity": 0.9,
+                  "paddingBottom": 13.5,
+                  "paddingLeft": 30,
+                  "paddingRight": 7.5,
+                  "paddingTop": 0,
+                  "textAlign": "center",
+                  "width": 244,
+                }
+              }
+              styles={
+                Object {
+                  "backgroundColor": "grey",
+                  "color": "white",
+                  "fontSize": 18,
+                  "lineHeight": 12,
+                  "paddingTop": 0,
+                  "textAlign": "center",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value="start"
+            />
+          </View>
+        </View>
+        <Modal
+          animationType="none"
+          deviceHeight={null}
+          deviceWidth={null}
+          hardwareAccelerated={false}
+          hideModalContentWhileAnimating={false}
+          onBackdropPress={[Function]}
+          onModalHide={[Function]}
+          onModalWillHide={[Function]}
+          onModalWillShow={[Function]}
+          onRequestClose={[Function]}
+          scrollHorizontal={false}
+          scrollOffset={0}
+          scrollOffsetMax={0}
+          scrollTo={null}
+          supportedOrientations={
+            Array [
+              "portrait",
+              "landscape",
+            ]
+          }
+          swipeThreshold={100}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            forwardedRef={[Function]}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "black",
+                "bottom": 0,
+                "height": 1334,
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 750,
+              }
+            }
+          />
+          <View
+            deviceHeight={null}
+            deviceWidth={null}
+            forwardedRef={[Function]}
+            hideModalContentWhileAnimating={false}
+            onBackdropPress={[Function]}
+            onModalHide={[Function]}
+            onModalWillHide={[Function]}
+            onModalWillShow={[Function]}
+            pointerEvents="box-none"
+            scrollHorizontal={false}
+            scrollOffset={0}
+            scrollOffsetMax={0}
+            scrollTo={null}
+            style={
+              Object {
+                "backgroundColor": "white",
+                "flex": 1,
+                "justifyContent": "center",
+                "margin": 0,
+                "transform": Array [
+                  Object {
+                    "translateY": 0,
+                  },
+                ],
+                "width": "100%",
+              }
+            }
+            supportedOrientations={
+              Array [
+                "portrait",
+                "landscape",
+              ]
+            }
+            swipeThreshold={100}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": undefined,
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "marginBottom": 46,
+                  "marginTop": 13.5,
+                  "opacity": 1,
+                  "width": 619,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontFamily": "DINAlternate-Bold",
+                    "fontSize": 16,
+                  }
+                }
+              >
+                end
+              </Text>
+            </View>
+          </View>
+        </Modal>
+      </View>
+      <View
+        style={
+          Object {
+            "marginLeft": 14.5,
+            "marginRight": 14.5,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "blue",
+                "fontSize": 32,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰁔
+        </Text>
+      </View>
+      <View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            pointerEvents="none"
+          >
+            <TextInput
+              allowFontScaling={true}
+              onChangeText={[Function]}
+              placeholderTextColor="red"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "backgroundColor": "grey",
+                  "borderRadius": 3,
+                  "color": "white",
+                  "fontSize": 18,
+                  "height": 93.5,
+                  "lineHeight": 12,
+                  "opacity": 0.9,
+                  "paddingBottom": 13.5,
+                  "paddingLeft": 30,
+                  "paddingRight": 7.5,
+                  "paddingTop": 0,
+                  "textAlign": "center",
+                  "width": 244,
+                }
+              }
+              styles={
+                Object {
+                  "backgroundColor": "grey",
+                  "color": "white",
+                  "fontSize": 18,
+                  "lineHeight": 12,
+                  "paddingTop": 0,
+                  "textAlign": "center",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value="End"
+            />
+          </View>
+        </View>
+        <Modal
+          animationType="none"
+          deviceHeight={null}
+          deviceWidth={null}
+          hardwareAccelerated={false}
+          hideModalContentWhileAnimating={false}
+          onBackdropPress={[Function]}
+          onModalHide={[Function]}
+          onModalWillHide={[Function]}
+          onModalWillShow={[Function]}
+          onRequestClose={[Function]}
+          scrollHorizontal={false}
+          scrollOffset={0}
+          scrollOffsetMax={0}
+          scrollTo={null}
+          supportedOrientations={
+            Array [
+              "portrait",
+              "landscape",
+            ]
+          }
+          swipeThreshold={100}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            forwardedRef={[Function]}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "black",
+                "bottom": 0,
+                "height": 1334,
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 750,
+              }
+            }
+          />
+          <View
+            deviceHeight={null}
+            deviceWidth={null}
+            forwardedRef={[Function]}
+            hideModalContentWhileAnimating={false}
+            onBackdropPress={[Function]}
+            onModalHide={[Function]}
+            onModalWillHide={[Function]}
+            onModalWillShow={[Function]}
+            pointerEvents="box-none"
+            scrollHorizontal={false}
+            scrollOffset={0}
+            scrollOffsetMax={0}
+            scrollTo={null}
+            style={
+              Object {
+                "backgroundColor": "white",
+                "flex": 1,
+                "justifyContent": "center",
+                "margin": 0,
+                "transform": Array [
+                  Object {
+                    "translateY": 0,
+                  },
+                ],
+                "width": "100%",
+              }
+            }
+            supportedOrientations={
+              Array [
+                "portrait",
+                "landscape",
+              ]
+            }
+            swipeThreshold={100}
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "center",
+                  "backgroundColor": "red",
+                  "borderColor": undefined,
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "marginBottom": 46,
+                  "marginTop": 13.5,
+                  "opacity": 1,
+                  "width": 619,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontFamily": "DINAlternate-Bold",
+                    "fontSize": 16,
+                  }
+                }
+              >
+                Continue
+              </Text>
+            </View>
+          </View>
+        </Modal>
+      </View>
+    </View>
+  </View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "grey",
+          "borderColor": undefined,
+          "borderRadius": 3,
+          "borderWidth": 0,
+          "height": 66.5,
+          "justifyContent": "center",
+          "marginBottom": 46,
+          "marginTop": 0,
+          "opacity": 1,
+          "width": 633,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontFamily": "DINAlternate-Bold",
+            "fontSize": 16,
+          }
+        }
+      >
+        Search within range
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#ed1941",
+          "borderColor": undefined,
+          "borderRadius": 3,
+          "borderWidth": 0,
+          "height": 66.5,
+          "justifyContent": "center",
+          "marginBottom": 46,
+          "marginTop": 0,
+          "opacity": 1,
+          "width": 633,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+            "fontFamily": "DINAlternate-Bold",
+            "fontSize": 16,
+          }
+        }
+      >
+        Clear filters
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListEmptyComponent={[Function]}
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+            "marginTop": 400,
+          }
+        }
+      >
+        <Text>
+          Loading past Launches
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`renders correctly across screens 1`] = `null`;

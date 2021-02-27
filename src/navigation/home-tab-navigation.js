@@ -18,9 +18,9 @@ const TabBarOptions = {
 const ScreenOptions = ({route}) => ({
   tabBarIcon: ({color}) => {
     if (route.name === 'Next launch') {
-      return <Icon name="chevron-right" size={20} color={color} />;
+      return <Icon name="airballoon" size={20} color={color} />;
     } else if (route.name === 'Past launches') {
-      return <Icon name="chevron-left" size={20} color={color} />;
+      return <Icon name="airballoon-outline" size={20} color={color} />;
     }
   },
 });

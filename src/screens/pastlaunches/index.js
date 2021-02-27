@@ -50,7 +50,7 @@ const PastLaunches = ({navigation}) => {
         ) {
           setPastLaunches([]);
           setListError(true);
-          showDefaultToast('No items found');
+          showDefaultToast(translate('PastLaunches.NoItems'));
         } else {
           setPastLaunches(response.data.docs);
         }
@@ -66,9 +66,7 @@ const PastLaunches = ({navigation}) => {
   };
   return (
     <View style={styles.container}>
-      <Text style={styles.filter}>
-        You can filter past launches between two dates
-      </Text>
+      <Text style={styles.filter}>{translate('PastLaunches.FilterText')}</Text>
       <View style={styles.InnerContainerTimeSelector}>
         <FromTimeToTimeTextInputs
           startDate={startDate}
@@ -83,7 +81,7 @@ const PastLaunches = ({navigation}) => {
       </View>
       <View style={styles.buttonsContainer}>
         <Button
-          buttonText={'Search within range'}
+          buttonText={translate('PastLaunches.SearchText')}
           onPress={() => {
             queryLaunches();
           }}
@@ -92,11 +90,11 @@ const PastLaunches = ({navigation}) => {
           marginTop={'0%'}
           textFontSize={'1'}
           disabled={startDate && endDate ? false : true}
-          backgroundColor={!(startDate && endDate) ? 'grey' : '#ed1941'}
+          backgroundColor={!(startDate && endDate) ? '#f5f5f5' : '#ed1941'}
           textColor={!(startDate && endDate) ? 'black' : 'white'}
         />
         <Button
-          buttonText={'Clear filters'}
+          buttonText={translate('PastLaunches.ClearFilter')}
           onPress={() => {
             setStartDate();
             setEndDate();
@@ -140,7 +138,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#E5E5E5',
     flex: 1,
-    paddingVertical: hp('1%')
+    paddingVertical: hp('1%'),
   },
   separator: {
     height: hp('1%'),
@@ -157,7 +155,7 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {},
   filter: {
-    color: 'blue',
+    color: 'black',
     textAlign: 'center',
     fontSize: 15,
     fontWeight: 'bold',

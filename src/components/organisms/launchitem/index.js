@@ -18,13 +18,9 @@ const LaunchItem = ({item, navigation}) => {
         goToLaunchDetails(item);
       }}>
       <Text style={styles.name}>
-        {translate('LaunchItem.LaunchName')}
-        {': '}
         {item.name}
       </Text>
       <Text style={styles.date}>
-        {translate('LaunchItem.LaunchDate')}
-        {': '}
         {moment(item.date_utc).format('YYYY-MM-DD hh:mm:ss a')}
       </Text>
     </TouchableOpacity>
@@ -34,9 +30,10 @@ const LaunchItem = ({item, navigation}) => {
 const styles = StyleSheet.create({
   mainContainer: {
     width: wp('92.2%'),
-    backgroundColor: 'grey',
+    backgroundColor: '#f5f5f5',
     borderRadius: 6,
     padding: 7,
+    paddingHorizontal: wp('4%'),
     marginBottom: hp('1%'),
     marginLeft: wp('4%'),
   },
