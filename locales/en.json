@@ -1,6 +1,7 @@
 {
   "Home": {
-    "NextLaunch": "Next launch data"
+    "NextLaunch": "Next launch data",
+    "LinkToFollow": "Follow the launch here"
   },
   "PastLaunches": {
     "EmptyList": "Loading past Launches",

@@ -45,6 +45,7 @@ const NextLaunch = ({navigation}) => {
     let minutes = parseInt(diffr.minutes());
     let seconds = parseInt(diffr.seconds());
     setTotalDuration(hours * 60 * 60 + minutes * 60 + seconds);
+    console.log('time ramaing', hours * 60 * 60 + minutes * 60 + seconds);
   };
 
   return (
@@ -63,7 +64,8 @@ const NextLaunch = ({navigation}) => {
           />
         ) : null}
       </View>
-      {/* <Button
+      <Text>{translate('Home.LinkToFollow')}</Text>
+      <Button
         buttonText={launchLink}
         onPress={() => {
           Linking.openURL(launchLink);
@@ -74,7 +76,7 @@ const NextLaunch = ({navigation}) => {
         marginTop={'0%'}
         textFontSize={'1'}
         textColor={'blue'}
-      /> */}
+      />
     </View>
   );
 };
