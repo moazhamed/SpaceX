@@ -38,13 +38,13 @@ const styles = StyleSheet.create({
     marginLeft: wp('4%'),
   },
   name: {
-    color: 'blue',
+    color: '#0054a6',
     fontSize: 14,
     fontWeight: 'bold',
   },
   date: {
     marginTop: hp('1%'),
-    color: 'blue',
+    color: '#0054a6',
     fontSize: 10,
   },
 });

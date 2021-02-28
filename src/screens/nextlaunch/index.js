@@ -51,7 +51,7 @@ const NextLaunch = ({navigation}) => {
     <View style={styles.container}>
       <Text style={styles.bigTitle}>{translate('Home.NextLaunch')}</Text>
       <Text style={styles.nameOfLaunch}>{nameOfLaunch}</Text>
-      <Icon name={'rocket-launch'} size={100} color={'blue'} />
+      <Icon name={'rocket-launch'} size={100} color={'#0054a6'} />
       <View style={styles.conutDownTimer}>
         {totalDuration ? (
           <CountDown
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontStyle: 'normal',
     textAlign: 'center',
-    color: 'blue',
+    color: '#0054a6',
     fontWeight: 'bold',
   },
   conutDownTimer: {

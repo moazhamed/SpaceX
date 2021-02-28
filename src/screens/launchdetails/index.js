@@ -44,9 +44,9 @@ const LaunchDetails = ({navigation, route}) => {
           height={'3%'}
           width={'94%'}
           backgroundColor={'transparent'}
-          marginTop={'0%'}
+          marginTop={'2%'}
           textFontSize={'1'}
-          textColor={'blue'}
+          textColor={'#0054a6'}
         />
       </View>
     </View>
@@ -58,13 +58,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#E5E5E5',
     alignItems: 'center',
-    justifyContent: 'space-around',
     paddingHorizontal: wp('2%'),
-    height: hp('80%'),
-    width: wp('100')
   },
   name: {
-    color: 'blue',
+    color: '#0054a6',
     fontSize: 34,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -95,11 +92,13 @@ const styles = StyleSheet.create({
   },
   link: {
     paddingHorizontal: wp('2%'),
+    paddingVertical: wp('1%'),
   },
   title: {
-    color: 'blue',
+    marginVertical: hp('1%'),
+    color: '#0054a6',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
     textAlign: 'center',
   },
 });
