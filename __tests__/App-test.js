@@ -34,13 +34,6 @@ it('api call queryLaunches unCorrectly', async () => {
   //test passed upon example request in github link
 });
 
-describe('<App />', () => {
-  it('has 1 child', () => {
-    const tree = renderer.create(<App />).toJSON();
-    expect(tree.children.length).toBe(0);
-  });
-});
-
 test('renders correctly', () => {
   const tree = renderer.create(<PastLaunches />).toJSON();
   expect(tree).toMatchSnapshot();
