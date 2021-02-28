@@ -52,7 +52,7 @@ const NextLaunch = ({navigation}) => {
     <View style={styles.container}>
       <Text style={styles.bigTitle}>{translate('Home.NextLaunch')}</Text>
       <Text style={styles.nameOfLaunch}>{nameOfLaunch}</Text>
-      <Icon name={'rocket-launch'} size={100} color={'#0054a6'} />
+      <Icon name={'rocket-launch'} size={hp('12%')} color={'#0054a6'} />
       <View style={styles.conutDownTimer}>
         {totalDuration ? (
           <CountDown
@@ -60,7 +60,7 @@ const NextLaunch = ({navigation}) => {
             timetoShow={('H', 'M', 'S')}
             onFinish={() => {}}
             onPress={() => {}}
-            size={20}
+            size={hp('3%')}
           />
         ) : null}
       </View>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
   },
   bigTitle: {
-    fontSize: 32,
+    fontSize: 30,
     fontStyle: 'normal',
     textAlign: 'center',
     fontWeight: 'bold',
@@ -102,9 +102,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   conutDownTimer: {
-    height: hp('20%'),
-    width: wp('100%'),
-    marginTop: hp('5%'),
+    height: hp('15%'),
+    width: wp('90%'),
+    marginTop: hp('2%'),
   },
 });
 
