@@ -64,19 +64,23 @@ const NextLaunch = ({navigation}) => {
           />
         ) : null}
       </View>
-      <Text>{translate('Home.LinkToFollow')}</Text>
-      <Button
-        buttonText={launchLink}
-        onPress={() => {
-          Linking.openURL(launchLink);
-        }}
-        height={'3%'}
-        width={'82.5%'}
-        backgroundColor={'transparent'}
-        marginTop={'0%'}
-        textFontSize={'1'}
-        textColor={'blue'}
-      />
+      {launchLink ? (
+        <>
+          <Text>{translate('Home.LinkToFollow')}</Text>
+          <Button
+            buttonText={launchLink}
+            onPress={() => {
+              Linking.openURL(launchLink);
+            }}
+            height={'3%'}
+            width={'82.5%'}
+            backgroundColor={'transparent'}
+            marginTop={'0%'}
+            textFontSize={'1'}
+            textColor={'blue'}
+          />
+        </>
+      ) : null}
     </View>
   );
 };
